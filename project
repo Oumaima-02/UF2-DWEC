@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form>
+<label for="toatalhours">Hours of dedication to learn :</label>
+    <input type="number" id="toatalhours" name="toatalhours"> <br> <br><br>
+    <label for="monday">lunes:</label>
+    <input type="number" id="monhour" name="monhour">
+  <br> <br>
+  <label for="tuesday">Tuesday:</label>
+    <input type="number" id="tuehour" name="tuehour">
+   <br> <br>
+  <label for="wednesday">Wednesday:</label>
+    <input type="number" id="wedhour" name="wedhour">
+   <br>  <br>
+  
+    <label for="thursday">Thursday:</label>
+    <input type="number" id="thurhour" name="thurhour">
+   <br>  <br>
+  <label for="friday">Friday:</label>
+    <input type="number" id="fridhour" name="fridhour">
+   <br> <br>
+  
+  <label for="saturday">Saturday:</label>
+    <input type="number" id="sathour" name="sathour">
+   <br> <br>
+  <label for="sunday">Sunday:</label>
+    <input type="number" id="sunhour" name="sunhour">
+  <br>
+ <br>
+  
+  <button onclick="save()"> Guardar </button>
+    <script>
+      </script>
+
+</form>
+<style>
+  function save(){
+  let  toatalhours = document.getElementById("toatalhours").value;
+  var  monhour = document.getElementById("monhour").value;
+var tuehour = document.getElementById("tuehour").value;
+var  wedhour = document.getElementById("wedhour").value;
+var thurhour = document.getElementById("thurhour").value;
+var  fridhour = document.getElementById("fridhour").value;
+var sathour = document.getElementById("sathour").value;
+var sunhour = document.getElementById("sunhour").value;
+ console.log(toatalhours);
+  var  hoursweek=
+monhour+tuehour+wedhour+thurhour+fridhour+sathour+sunhour;
+console.log(monhour+tuehour+wedhour+thurhour+fridhour+sathour+sunhour);
+  console.log(hoursweek);
+}
+
+
+</style>
+</body>
+</html>
+
+
