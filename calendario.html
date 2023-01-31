@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form>
+<label for="toatalhours">Hours of dedication to learn :</label>
+    <input type="number" id="toatalhours" name="toatalhours"> <br> <br><br>
+    <label for="monday">lunes:</label>
+    <input type="number" id="monhour">
+  <br> <br>
+  <label for="tuesday">Tuesday:</label>
+    <input type="number" id="tuehour" >
+   <br> <br>
+  <label for="wednesday">Wednesday:</label>
+    <input type="number" id="wedhour" name="wedhour">
+   <br>  <br>
+  
+    <label for="thursday">Thursday:</label>
+    <input type="number" id="thurhour" name="thurhour">
+   <br>  <br>
+  <label for="friday">Friday:</label>
+    <input type="number" id="fridhour" name="fridhour">
+   <br> <br>
+  
+  <label for="saturday">Saturday:</label>
+    <input type="number" id="sathour" name="sathour">
+   <br> <br>
+  <label for="sunday">Sunday:</label>
+    <input type="number" id="sunhour" name="sunhour">
+  <br>
+ <br>
+  
+  <button onclick="save()"> Guardar </button>
+    
+</form>
+  <script>
+    function save(){
+  let  totalhours = parseInt(document.getElementById("toatalhours").value);
+  let  monhour = parseInt(document.getElementById("monhour").value);
+let tuehour = parseInt(document.getElementById("tuehour").value);
+let  wedhour = parseInt(document.getElementById("wedhour").value);
+let thurhour =parseInt(document.getElementById("thurhour").value);
+let  fridhour =parseInt(document.getElementById("fridhour").value);
+let sathour = parseInt(document.getElementById("sathour").value);
+let sunhour =parseInt( document.getElementById("sunhour").value);
+ console.log(totalhours);
+ let hoursweek=
+monhour+tuehour+wedhour+thurhour+fridhour+sathour+sunhour;
+ //let hoursweek=parseInt(monhour)+parseInt(tuehour)+parseInt(wedhour)+parseInt(thurhour)+ parseInt(fridhour)+parseInt(sathour)+parseInt(sunhour);
+let faltan=totalhours-hoursweek
+  console.log(faltan);
+      document.writeln("Horas que faltan:"+faltan);
+      document.writeln("<br>Horas por semana:"+hoursweek);
+      document.writeln("<br>Total de horas que hay que dedicar:"+totalhours);    
+      
+}
+
+</script>
+
+</body>
+</html>
